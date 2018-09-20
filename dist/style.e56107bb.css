@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Schoolbell");
 * {
-  background-color: #000;
-  color: white;
-  border: 10px solid orange;
-  font-size-adjust: 34px; }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+main {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-color: grey;
+  color: white; }
+
+h1 {
+  font-family: 'Schoolbell', cursive;
+  color: blueviolet; }
