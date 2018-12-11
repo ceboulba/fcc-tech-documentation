@@ -105,15 +105,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({"src/js/index.js":[function(require,module,exports) {
-window.addEventListener('load', function (e) {
-  console.log('helloWorld');
+document.addEventListener('DOMContentLoaded', function () {
+  //recupere les liens .nav-link
   var navLinks = document.querySelectorAll('.nav-link');
-  navLinks.forEach(function (e) {
-    return e.addEventListener('click', function (e) {
-      console.log('e => ', e);
-      e.target.classList.toggle('is-active');
-    });
-  });
 });
 },{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

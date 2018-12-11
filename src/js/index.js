@@ -1,12 +1,7 @@
-window.addEventListener('load', function(e) {
-  console.log('helloWorld')
+document.addEventListener('DOMContentLoaded', () => {
 
+  //recupere les liens .nav-link
   const navLinks = document.querySelectorAll('.nav-link')
-
-  navLinks.forEach(e =>
-    e.addEventListener('click', function(e) {
-      console.log('e => ', e)
-      e.target.classList.toggle('is-active')
-    })
-  )
+  
 })
+ 
