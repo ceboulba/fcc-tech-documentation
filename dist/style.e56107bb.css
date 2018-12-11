@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Schoolbell");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+main {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  height: 100vh; }
+
+h1 {
+  font-family: 'Schoolbell', cursive;
+  color: blueviolet; }
+
 /*! bulma.io v0.7.1 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -3736,7 +3749,7 @@ a.dropdown-item {
 .menu-list {
   line-height: 1.25; }
   .menu-list a {
-    border-radius: 2px;
+    border-radius: 5px;
     color: #4a4a4a;
     display: block;
     padding: 0.5em 0.75em; }
@@ -6419,16 +6432,3 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-main {
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
-  height: 100vh; }
-
-h1 {
-  font-family: 'Schoolbell', cursive;
-  color: blueviolet; }

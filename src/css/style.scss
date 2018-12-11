@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Schoolbell');
-@import '../../node_modules/bulma/bulma.sass';
 
 * {
   padding: 0;
@@ -16,3 +15,7 @@ h1 {
   font-family: 'Schoolbell', cursive;
   color: blueviolet;
 }
+
+$menu-item-radius: 5px;
+
+@import '../../node_modules/bulma/bulma.sass';
