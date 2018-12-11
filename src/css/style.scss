@@ -16,6 +16,10 @@ h1 {
   color: blueviolet;
 }
 
+.right{
+  border: 1px solid red;
+}
+
 $menu-item-radius: 5px;
 
 @import '../../node_modules/bulma/bulma.sass';
