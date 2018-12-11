@@ -16,8 +16,13 @@ h1 {
   color: blueviolet;
 }
 
-.right{
-  border: 1px solid red;
+.columns {
+  position: absolute;
+}
+
+.menu{
+  position: sticky;
+  top: 0px;
 }
 
 $menu-item-radius: 5px;
