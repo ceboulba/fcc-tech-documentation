@@ -16,6 +16,11 @@ h1 {
   color: blueviolet;
 }
 
+bd-tabs{
+  display: block;
+  box-sizing: inherit;
+}
+
 $menu-item-radius: 5px;
 
 @import '../../node_modules/bulma/bulma.sass';
