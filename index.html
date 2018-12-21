@@ -149,15 +149,17 @@
           <header class="title">Hello world</header>
           <p>
             To get started with writing JavaScript, open the Scratchpad and
-            write your first "Hello world" JavaScript code:
+            write your first "Hello world" JavaScript code:<br/><br/>
           </p>
+
           <div class="notification">
-            <!-- travailler affichage du <code></code> -->
-            <code class="content"
-              >function greetMe(yourName) { <br />
-              alert("Hello " + yourName);<br />
-              } <br />
-              greetMe("World"); <br />
+            <code class="code">
+              <p>
+              function greetMe(yourName) {<br/>
+              alert("Hello " + yourName);<br/>
+              }<br/>
+              greetMe("World");<br/>
+            </p>
             </code>
           </div>
           <p>
@@ -188,19 +190,39 @@
         <section class="main-section section" id="Declaring_variables">
           <header class="title">Declaring variables</header>
           <p>You can declare a variable in three ways:</p>
-          <p>With the keyword var. For example,</p>
-          <code>var x = 42.</code>
+          <p>With the keyword var. For example,</p><br/>
+
+          <div class="notification">
+            <code class="code">
+             <p>
+               var x = 42.
+             </p>
+            </code>
+          </div>
+
           <p>
             This syntax can be used to declare both local and global variables.
           </p>
-          <p>By simply assigning it a value. For example,</p>
-          <code>x = 42.</code>
+          <p>By simply assigning it a value. For example,</p><br/>
+          <div class="notification">
+            <code class="code">
+              <p>
+                x = 42.</code>
+              </p>
+          </div>
           <p>
             This always declares a global variable. It generates a strict
             JavaScript warning. You shouldn't use this variant.
           </p>
-          <p>With the keyword let. For example,</p>
-          <code>let y = 13.</code>
+          <p>With the keyword let. For example,</p><br/>
+          <div class="notification">
+            <code class="code">
+              <p>
+                let y = 13.
+              </p>
+            </code>
+          </div>
+
           <p>
             This syntax can be used to declare a block scope local variable. See
             Variable scope below.
@@ -223,15 +245,26 @@
             function (or global context) within which x is declared, not the
             block, which in this case is an if statement.
           </p>
-          <code> if (true) { var x = 5; } console.log(x); // 5 </code>
+          <div class="notification">
+            <code class="code">
+              <p>
+                if (true) { var x = 5; } console.log(x); // 5 
+              </p>
+              </code>
+
+          </div>
           <p>
             This behavior changes, when using the let declaration introduced in
-            ECMAScript 2015.
+            ECMAScript 2015.<br/>
           </p>
-          <code>
-            if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-            defined
+          <div class="notification">
+            <code class="code"><p>
+              if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+              defined
+            </p>
           </code>
+          </div>
+          
         </section>
 
         <section class="main-section section" id="Global_variables">
@@ -255,9 +288,16 @@
             You can create a read-only, named constant with the const keyword.
             The syntax of a constant identifier is the same as for a variable
             identifier: it must start with a letter, underscore or dollar sign
-            and can contain alphabetic, numeric, or underscore characters.
+            and can contain alphabetic, numeric, or underscore characters.<br/><br/>
           </p>
-          <code>const PI = 3.14;</code>
+          <div class="notification">
+
+            <code class="code">
+              <p>
+                const PI = 3.14;
+              </p>
+            </code>
+            </div>
           <p>
             A constant cannot change value through assignment or be re-declared
             while the script is running. It has to be initialized to a value.
