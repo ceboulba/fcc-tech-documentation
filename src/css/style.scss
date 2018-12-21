@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 100px;
+}
+
 main {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   height: 100vh;
@@ -16,9 +20,15 @@ h1 {
   color: blueviolet;
 }
 
-bd-tabs{
+bd-tabs {
   display: block;
   box-sizing: inherit;
+}
+
+.navbar {
+  width: inherit;
+  padding: 20px;
+  border-right: 1px solid grey;
 }
 
 $menu-item-radius: 5px;
