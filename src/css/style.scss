@@ -1,3 +1,4 @@
+@import '../../node_modules/bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css?family=Lato|Schoolbell');
 
 * {
@@ -23,4 +24,29 @@ bd-tabs{
 
 $menu-item-radius: 5px;
 
-@import '../../node_modules/bulma/bulma.sass';
+
+  .notification code{
+    background-color: transparent;
+    color: #4a4a4a;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .menu{
+    position: fixed;
+  }
+
+  .content-text{
+    position: absolute;
+    border: 1px solid grey;
+  }
+
+  .big-menu{
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ 
