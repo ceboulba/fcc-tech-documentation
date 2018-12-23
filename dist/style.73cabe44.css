@@ -6425,6 +6425,9 @@ label.panel-block {
   margin: 0;
   box-sizing: border-box; }
 
+body {
+  padding: 100px; }
+
 main {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   height: 100vh; }
@@ -6436,6 +6439,15 @@ h1 {
 bd-tabs {
   display: block;
   box-sizing: inherit; }
+
+.notification .code {
+  color: inherit;
+  background: transparent; }
+
+.navbar {
+  width: inherit;
+  padding: 20px;
+  border-right: 1px solid grey; }
 
 .notification code {
   background-color: transparent;
