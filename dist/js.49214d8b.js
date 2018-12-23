@@ -104,10 +104,25 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({"src\\js\\index.js":[function(require,module,exports) {
-window.addEventListener('load', function (e) {
-  console.log('helloWorld');
+document.addEventListener('DOMContentLoaded', function () {
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-  var navLinks = document.querySelectorAll('.nav-link');
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function (el) {
+      el.addEventListener('click', function () {
+        // Get the target from the "data-target" attribute
+        var target = el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
 });
 },{}],"C:\\Users\\antoi\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -138,7 +153,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51099' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50235' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

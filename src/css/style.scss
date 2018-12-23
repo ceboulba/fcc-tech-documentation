@@ -17,13 +17,17 @@ main {
 }
 
 h1 {
-  font-family: 'Schoolbell', cursive;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   color: blueviolet;
 }
 
 bd-tabs {
   display: block;
   box-sizing: inherit;
+}
+
+.section header {
+  text-decoration: underline;
 }
 
 .notification .code {
@@ -39,29 +43,19 @@ bd-tabs {
 
 $menu-item-radius: 5px;
 
+.notification code {
+  background-color: transparent;
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.5;
+}
 
-  .notification code{
-    background-color: transparent;
-    color: #4a4a4a;
-    font-size: 1rem;
-    font-style: italic;
-    line-height: 1.5;
-  }
+.menu {
+  position: fixed;
+}
 
-  .menu{
-    position: fixed;
-  }
-
-  .content-text{
-    position: absolute;
-    border: 1px solid grey;
-  }
-
-  .big-menu{
-    height: 330px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
- 
+.content-text {
+  position: absolute;
+  border: 1px solid grey;
+}
