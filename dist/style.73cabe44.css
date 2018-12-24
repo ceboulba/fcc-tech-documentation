@@ -6433,12 +6433,15 @@ main {
   height: 100vh; }
 
 h1 {
-  font-family: 'Schoolbell', cursive;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   color: blueviolet; }
 
 bd-tabs {
   display: block;
   box-sizing: inherit; }
+
+.section header {
+  text-decoration: underline; }
 
 .notification .code {
   color: inherit;
@@ -6456,15 +6459,15 @@ bd-tabs {
   font-style: italic;
   line-height: 1.5; }
 
-.menu {
-  position: fixed; }
-
 .content-text {
   position: absolute;
   border: 1px solid grey; }
 
 .big-menu {
-  height: 330px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  border: 1px solid grey;
+  position: relative;
+  top: 50px;
+  width: 80%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 101; }

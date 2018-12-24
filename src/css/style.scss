@@ -51,11 +51,17 @@ $menu-item-radius: 5px;
   line-height: 1.5;
 }
 
-.menu {
-  position: fixed;
-}
-
 .content-text {
   position: absolute;
   border: 1px solid grey;
+}
+
+.big-menu{
+border: 1px solid grey;
+position: relative;
+top: 50px;
+width: 80%;
+position: fixed;
+background-color: #fff;
+z-index: 101;
 }
