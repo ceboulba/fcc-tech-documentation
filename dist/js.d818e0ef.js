@@ -105,23 +105,36 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({"src/js/index.js":[function(require,module,exports) {
-document.addEventListener('DOMContentLoaded', function () {
-  // Get all "navbar-burger" elements
-  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0); // Check if there are any navbar burgers
-
-  if ($navbarBurgers.length > 0) {
-    // Add a click event on each of them
-    $navbarBurgers.forEach(function (el) {
-      el.addEventListener('click', function () {
-        // Get the target from the "data-target" attribute
-        var target = el.dataset.target;
-        var $target = document.getElementById(target); // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-      });
-    });
-  }
+// import { get } from 'https'
+// document.addEventListener('DOMContentLoaded', () => {
+//   // Get all "navbar-burger" elements
+//   const $navbarBurgers = Array.prototype.slice.call(
+//     document.querySelectorAll('.navbar-burger'),
+//     0
+//   )
+//   // Check if there are any navbar burgers
+//   if ($navbarBurgers.length > 0) {
+//     // Add a click event on each of them
+//     $navbarBurgers.forEach(el => {
+//       el.addEventListener('click', () => {
+//         // Get the target from the "data-target" attribute
+//         const target = el.dataset.target
+//         const $target = document.getElementById(target)
+//         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+//         el.classList.toggle('is-active')
+//         $target.classList.toggle('is-active')
+//       })
+//     })
+//   }
+// })
+document.addEventListener('DOMContentLoaded', function (event) {
+  console.log('Loaded !');
+  var navbar = document.getElementById('navbar');
+  console.log('navbar => ', navbar);
+  console.log('event => ', event);
+});
+document.addEventListener('onresize', function (event) {
+  console.log('event.target.width', event.target.width);
 });
 },{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -150,7 +163,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59699" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50056" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
