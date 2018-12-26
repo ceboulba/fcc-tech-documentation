@@ -130,8 +130,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 //   }
 // })
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function (event) {
   console.log('Loaded !');
+
+  var navbar = document.getElementById('navbar');
+
+  console.log('navbar => ', navbar);
+  console.log('event => ', event);
+});
+
+document.addEventListener('onresize', function (event) {
+  console.log('event.target.width', event.target.width);
 });
 },{}],"C:\\Users\\antoi\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -162,7 +171,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55250' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50063' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

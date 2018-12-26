@@ -24,6 +24,15 @@
 //   }
 // })
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', event => {
   console.log('Loaded !')
+
+  const navbar = document.getElementById('navbar')
+
+  console.log('navbar => ', navbar)
+  console.log('event => ', event)
+})
+
+document.addEventListener('onresize', event => {
+  console.log('event.target.width', event.target.width)
 })
