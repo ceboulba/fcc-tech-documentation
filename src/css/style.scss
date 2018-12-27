@@ -1,5 +1,13 @@
 @import '../../node_modules/bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css?family=Lato|Schoolbell');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+.title {
+  font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+  color: #fff;
+  background-color: $primary;
+  padding: 1em;
+}
 
 * {
   padding: 0;
@@ -7,13 +15,8 @@
   box-sizing: border-box;
 }
 
-body {
-  padding: 100px;
-}
-
 main {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
-  height: 100vh;
 }
 
 h1 {
@@ -21,28 +24,15 @@ h1 {
   color: blueviolet;
 }
 
-bd-tabs {
-  display: block;
-  box-sizing: inherit;
-}
-
-.section header {
-  text-decoration: underline;
-}
-
-.notification .code {
-  color: inherit;
-  background: transparent;
-}
-
-.navbar {
-  width: inherit;
-  padding: 20px;
-  border-right: 1px solid grey;
-}
-
 $menu-item-radius: 5px;
 
+.container .title {
+  background-color: transparent;
+}
+
+.hero {
+  margin-bottom: 1em;
+}
 .notification code {
   background-color: transparent;
   color: #4a4a4a;
@@ -54,4 +44,10 @@ $menu-item-radius: 5px;
 .content-text {
   position: absolute;
   border: 1px solid grey;
+}
+
+i {
+  margin-left: 1em;
+  font-size: 20px;
+  color: #fff;
 }

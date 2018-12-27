@@ -132,7 +132,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
 document.addEventListener('DOMContentLoaded', function (event) {
   console.log('Loaded !');
-})();
+  console.log(event);
+});
 },{}],"C:\\Users\\antoi\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
