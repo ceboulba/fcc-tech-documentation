@@ -26,18 +26,4 @@
 
 document.addEventListener('DOMContentLoaded', event => {
   console.log('Loaded !')
-
-  const navbar = document.getElementById('navbar')
-
-  console.log('navbar => ', navbar)
-  console.log('event => ', event)
-})
-
-function refresh() {
-  console.log('Refresh')
-}
-const bool = document.querySelector('body')
-
-while (bool) {
-  refresh()
-}
+})()
