@@ -33,6 +33,11 @@ document.addEventListener('DOMContentLoaded', event => {
   console.log('event => ', event)
 })
 
-document.addEventListener('onresize', event => {
-  console.log('event.target.width', event.target.width)
-})
+function refresh() {
+  console.log('Refresh')
+}
+const bool = document.querySelector('body')
+
+while (bool) {
+  refresh()
+}
