@@ -6421,42 +6421,26 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-.title {
+.card-header-title {
   font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
-  color: #fff;
-  background-color: #00d1b2;
-  padding: 1em; }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-main {
-  font-family: 'Lato', Arial, Helvetica, sans-serif; }
-
-h1 {
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
-  color: blueviolet; }
-
-.container .title {
-  background-color: transparent; }
-
-.hero {
-  margin-bottom: 1em; }
-
-.notification code {
-  background-color: transparent;
   color: #4a4a4a;
-  font-size: 1rem;
-  font-style: italic;
-  line-height: 1.5; }
-
-.content-text {
-  position: absolute;
-  border: 1px solid grey; }
+  font-size: 2rem; }
 
 i {
   margin-left: 1em;
   font-size: 20px;
-  color: #fff; }
+  color: #4a4a4a; }
+
+.hero {
+  margin-bottom: 2rem; }
+
+.card {
+  margin-bottom: 2rem; }
+
+.notification code {
+  color: #4a4a4a;
+  background-color: inherit; }
+
+.notification {
+  border: 1px solid #4a4a4a4a;
+  margin-top: 1rem; }
