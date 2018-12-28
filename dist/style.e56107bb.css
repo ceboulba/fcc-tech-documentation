@@ -6444,3 +6444,7 @@ i {
 .notification {
   border: 1px solid #4a4a4a4a;
   margin-top: 1rem; }
+
+.big-menu {
+  display: block;
+  height: 250px; }
