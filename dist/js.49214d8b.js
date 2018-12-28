@@ -104,8 +104,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({"src\\js\\index.js":[function(require,module,exports) {
-// import { get } from 'https'
-
 // document.addEventListener('DOMContentLoaded', () => {
 //   // Get all "navbar-burger" elements
 //   const $navbarBurgers = Array.prototype.slice.call(
