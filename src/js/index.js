@@ -22,7 +22,16 @@
 //   }
 // })
 
-document.addEventListener('DOMContentLoaded', event => {
-  console.log('Loaded !')
-  console.log(event)
+document.addEventListener('DOMContentLoaded', (event) => {
+  //console.log('Loaded !')
+  console.log(event)  
+  
+  const width = document.querySelector(".width")
+  function resize(){
+    width.textContent = window.innerWidth
+    // width.textContent = 'resize'
+  }
+  
+  // window.resize = resize()
+  window.addEventListener('resize',resize)
 })
