@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   console.log(event)  
   
   const width = document.querySelector(".width")
+  width.textContent = window.innerWidth
+
   function resize(){
     width.textContent = window.innerWidth
     // width.textContent = 'resize'
