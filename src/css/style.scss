@@ -1,4 +1,4 @@
-@import '../../node_modules/bulma/bulma.sass';
+// @import '../../node_modules/bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css?family=Lato|Schoolbell');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 
@@ -15,6 +15,7 @@ i {
 }
 .hero {
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .card {
@@ -43,5 +44,22 @@ i {
 
 .container{
   display: grid;
-  
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 200px auto;
+}
+
+.hero{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.main{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-template-columns: 1fr 2fr;
+  display: grid;
+}
+
+.card{
+  grid-column-start: 2;  
 }
