@@ -24,10 +24,12 @@
 
 document.addEventListener('DOMContentLoaded', event => {
   //console.log('Loaded !')
-  console.log(event)
+  console.log(event)  
+  
+  const width = document.querySelector(".width")
+  width.textContent = window.innerWidth
 
-  const width = document.querySelector('.width')
-  function resize() {
+  function resize(){
     width.textContent = window.innerWidth
     
     // width.textContent = 'resize'
