@@ -100,3 +100,14 @@ body {
     transform: translateX(0);
   }
 }
+
+#navbar.menu li {
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  margin: 10px;
+  line-height: 40px;
+  font-size: 1em;
+  color: white;
+  width: 300px;
+}
