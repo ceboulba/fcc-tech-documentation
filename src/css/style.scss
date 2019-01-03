@@ -1,65 +1,113 @@
 // @import '../../node_modules/bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css?family=Lato|Schoolbell');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
-.card-header-title {
-  font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
-  color: #4a4a4a;
-  font-size: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-i {
-  margin-left: 1em;
-  font-size: 20px;
-  color: #4a4a4a;
-}
-.hero {
-  margin-bottom: 2rem;
-  width: 100%;
-}
-
-.card {
-  margin-bottom: 2rem;
+body {
+  font-family: 'Lato', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
 }
 
-.notification code {
-  color: #4a4a4a;
-  background-color: inherit;
+.header {
+  height: 95vh;
+  min-width: 580px;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(45, 180, 210, 0.8),
+      rgba(10, 50, 55, 0.8)
+    ),
+    url(../img/header-background.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  background-size: cover;
+  background-position: top;
+  position: relative;
 }
 
-.notification {
-  border: 1px solid #4a4a4a4a;
-  margin-top: 1rem;
+.logo-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
-.big-menu {
+.logo {
+  height: 75px;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}
+
+.heading-primary-main {
+  font-size: 1.5em;
   display: block;
-  height: 250px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  animation: moveInLeft 1s ease-in-out;
 }
 
-.nums{
-  border: 1px solid grey;
-  padding: 4px;
+.heading-primary-sub {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 10px;
+  display: block;
+  animation: moveInRight 1s ease-in-out;
 }
 
-.container{
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 200px auto;
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.hero{
-  grid-column-start: 1;
-  grid-column-end: 3;
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.main{
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-template-columns: 1fr 2fr;
-  display: grid;
-}
-
-.card{
-  grid-column-start: 2;  
+#navbar.menu li {
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  margin: 10px;
+  line-height: 40px;
+  font-size: 1em;
+  color: white;
+  width: 300px;
 }
