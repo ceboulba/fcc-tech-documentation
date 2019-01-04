@@ -2,6 +2,57 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Schoolbell');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 @import url('https://fonts.googleapis.com/css?family=Lato');
+$bleu-archipicture : #30B6D1;
+$bleu-archipicture-dark : rgb(25, 110, 130);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 * {
   margin: 0;
@@ -17,6 +68,13 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 30px;
+}
+
+.card-header-title{
+  font-size: 2em;
+  font-weight: 700;
+  font-family: 'Crimson Text';
+  display: inline;
 }
 
 .header {
@@ -101,13 +159,54 @@ body {
   }
 }
 
-#navbar.menu li {
+a{
+  color: inherit;
+}
+
+a:hover{
+  color: $bleu-archipicture;
+}
+
+.card{
+  margin-top: 1em;
+  padding: 1em;
+  min-width: 400px;
+  border: 1px solid $bleu-archipicture;
+}
+
+.card-header-icon{
+color: $bleu-archipicture;
+}
+
+.menu{
+  background-color: $bleu-archipicture;
+}
+
+.menu ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu a{
   text-decoration: none;
-  background-color: grey;
+  text-align: center;
+  color: #fff;
+  display: block;
   padding: 10px;
-  margin: 10px;
-  line-height: 40px;
-  font-size: 1em;
-  color: white;
-  width: 300px;
+}
+
+.menu a:hover{
+background-color: $bleu-archipicture-dark;
+}
+
+@media screen and (min-width: 768px){
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  nav li {
+    flex-grow: 1 1 0;
+  }
 }
