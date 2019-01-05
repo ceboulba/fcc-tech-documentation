@@ -22,19 +22,19 @@
 //   }
 // })
 
-document.addEventListener('DOMContentLoaded', event => {
+document.addEventListener('DOMContentLoaded', () => {
   //console.log('Loaded !')
-  console.log(event)
+  console.log('DOMContentLoaded')
 
-  const width = document.querySelector('.width')
-  width.textContent = window.innerWidth
+  // const width = document.querySelector('.width')
+  // width.textContent = window.innerWidth
 
-  function resize() {
-    width.textContent = window.innerWidth
+  // function resize() {
+  //   width.textContent = window.innerWidth
 
-    // width.textContent = 'resize'
-  }
+  //   // width.textContent = 'resize'
+  // }
 
-  // window.resize = resize()
-  window.addEventListener('resize', resize)
+  // // window.resize = resize()
+  // window.addEventListener('resize', resize)
 })
