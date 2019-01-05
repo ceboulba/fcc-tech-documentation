@@ -25,8 +25,21 @@ import { Z_FIXED } from "zlib";
 // })
 
 document.addEventListener('DOMContentLoaded', () => {
-  //console.log('Loaded !')
   console.log('DOMContentLoaded')
+
+  const menu = document.querySelector('.menu')
+
+  const calcDistance = () => {
+   const dist = menu.getBoundingClientRect().y;
+  //  console.log('dist =>',dist)
+   return dist
+  }
+
+  const toTop = calcDistance()
+
+  window.addEventListener('resize', calcDistance)
+
+  console.log('menu => ', calcDistance())
 
   // const width = document.querySelector('.width')
   // width.textContent = window.innerWidth
