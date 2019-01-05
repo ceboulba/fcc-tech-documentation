@@ -29,57 +29,59 @@
 
 
     <nav id="navbar" class="menu">
-      <header>freeCodeCamp Documentation</header>
-      <div class="menu-list">
-        <ul>
-          <li>
-            <a href="#Introduction" class="nav-link">Introduction</a>
-          </li>
-          <li>
-            <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
-          </li>
-          <li>
-            <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
-          </li>
-          <li><a href="#Hello_world" class="nav-link">Hello world</a></li>
-          <li><a href="#Variables" class="nav-link">Variables</a></li>
-          <li>
-            <a href="#Declaring_variables" class="nav-link">Declaring variables</a>
-          </li>
-          <li>
-            <a href="#Variable_scope" class="nav-link">Variable scope</a>
-          </li>
-          <li>
-            <a href="#Global_variables" class="nav-link">Global variables</a>
-          </li>
-          <li><a href="#Constants" class="nav-link">Constants</a></li>
-          <li><a href="#Data_types" class="nav-link">Data types</a></li>
-          <li>
-            <a href="#if...else_statement" class="nav-link">if...else statement</a>
-          </li>
-          <li>
-            <a href="#while_statement" class="nav-link">while statement</a>
-          </li>
-          <li>
-            <a href="#Function_declarations" class="nav-link">Function declarations</a>
-          </li>
-          <li>
-            <a href="#Reference" class="nav-link">Reference</a>
-          </li>
-        </ul>
-      </div>
+      <header class="menu-header">
+       <h2>
+         freeCodeCamp Documentation
+       </h2>
+      </header>
+      <ul class="menu-list">
+        <li>
+          <a href="#Introduction" class="nav-link">Introduction</a>
+        </li>
+        <li>
+          <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
+        </li>
+        <li>
+          <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
+        </li>
+        <li><a href="#Hello_world" class="nav-link">Hello world</a></li>
+        <li><a href="#Variables" class="nav-link">Variables</a></li>
+        <li>
+          <a href="#Declaring_variables" class="nav-link">Declaring variables</a>
+        </li>
+        <li>
+          <a href="#Variable_scope" class="nav-link">Variable scope</a>
+        </li>
+        <li>
+          <a href="#Global_variables" class="nav-link">Global variables</a>
+        </li>
+        <li><a href="#Constants" class="nav-link">Constants</a></li>
+        <li><a href="#Data_types" class="nav-link">Data types</a></li>
+        <li>
+          <a href="#if...else_statement" class="nav-link">if...else statement</a>
+        </li>
+        <li>
+          <a href="#while_statement" class="nav-link">while statement</a>
+        </li>
+        <li>
+          <a href="#Function_declarations" class="nav-link">Function declarations</a>
+        </li>
+        <li>
+          <a href="#Reference" class="nav-link">Reference</a>
+        </li>
+      </ul>
     </nav>
 
     <main id="main-doc" class="main">
-      <section class="main-section card" id="Introduction">
-        <header class="card-header">
-          <h2 class="card-header-title">Introduction</h2>
-          <span class="card-header-icon">
+
+      <section class="main-section" id="Introduction">
+        <header class="section-header">
+          <span class="section-header-title">Introduction</span>
+          <span class="section-header-icon">
             <a href="#main-doc"><i class="far fa-arrow-alt-circle-up"></i></a>
           </span>
         </header>
-        <div class="card-content">
-          <div class="content">
+        <div class="section-content">
             <p>
               JavaScript is a cross-platform, object-oriented scripting
               language. It is a small and lightweight language. Inside a host
@@ -112,22 +114,21 @@
                 file manipulations on a server.
               </li>
             </ul>
-          </div>
         </div>
       </section>
 
-      <section class="main-section card" id="What_you_should_already_know">
-        <header class="card-header">
-          <span class="card-header-title">
+      <section class="main-section" id="What_you_should_already_know">
+        <header class="section-header">
+          <span class="section-header-title">
             What you should already know
           </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#menu-link">
               <i class="far fa-arrow-alt-circle-up"></i>
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           <p>This guide assumes you have the following basic background:</p>
           <ul>
             <li>
@@ -147,16 +148,16 @@
       </section>
 
       <section class="main-section card" id="JavaScript_and_Java">
-        <header class="card-header">
-          <span class="card-header-title">
+        <header class="section-header">
+          <span class="section-header-title">
             JavaScript and Java </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#main-doc">
               <i class="far fa-arrow-alt-circle-up"></i>
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           <p>
             JavaScript and Java are similar in some ways but fundamentally
             different in some others. The JavaScript language resembles Java
@@ -187,17 +188,17 @@
       </section>
 
       <section class="main-section card" id="Hello_world">
-        <header class="card-header">
-          <span class="card-header-title">
+        <header class="section-header">
+          <span class="section-header-title">
             Hello world
           </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#main-doc">
               <i class="far fa-arrow-alt-circle-up"></i>
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           <p>
             To get started with writing JavaScript, open the Scratchpad and
             write your first "Hello world" JavaScript code:
@@ -216,17 +217,17 @@
       </section>
 
       <section class="main-section card" id="Variables">
-        <header class="card-header">
-          <span class="card-header-title">
+        <header class="section-header">
+          <span class="section-header-title">
             Variables
           </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#main-doc">
               <i class="far fa-arrow-alt-circle-up"></i>
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           <p>
             You use variables as symbolic names for values in your
             application. The names of variables, called identifiers, conform
@@ -246,17 +247,17 @@
       </section>
 
       <section class="main-section card" id="Declaring_variables">
-        <header class="title card-header">
-          <span class="card-header-title">
+        <header class="title section-header">
+          <span class="section-header-title">
             Declaring variables
           </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#main-doc">
               <i class="far fa-arrow-alt-circle-up"></i>
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           <p>You can declare a variable in three ways:</p>
           <p>With the keyword var. For example,</p>
           <div class="notification"><code>var x = 42.</code></div>
@@ -280,17 +281,17 @@
       </section>
 
       <section class="main-section card" id="Variable_scope">
-        <header class="card-header">
-          <span class="card-header-title">
+        <header class="section-header">
+          <span class="section-header-title">
             Variable scope
           </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#main-doc">
               <i class="far fa-arrow-alt-circle-up"></i>
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           <p>
             When you declare a variable outside of any function, it is
             called a global variable, because it is available to any other
@@ -322,17 +323,17 @@
       </section>
 
       <section class="main-section card" id="Global_variables">
-        <header class="card-header">
-          <span class="card-header-title">
+        <header class="section-header">
+          <span class="section-header-title">
             Global variables
           </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#main-doc">
               <i class="far fa-arrow-alt-circle-up"></i>
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           <p>
             Global variables are in fact properties of the global object. In
             web pages the global object is window, so you can set and access
@@ -348,17 +349,17 @@
       </section>
 
       <section class="main-section card" id="Constants">
-        <header class="card-header">
-          <span class="card-header-title">
+        <header class="section-header">
+          <span class="section-header-title">
             Constants
           </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#main-doc">
               <i class="far fa-arrow-alt-circle-up"></i>
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           <p>
             You can create a read-only, named constant with the const
             keyword. The syntax of a constant identifier is the same as for
@@ -400,17 +401,17 @@
       </section>
 
       <section class="main-section card" id="Data_types">
-        <header class="card-header">
-          <span class="card-header-title">
+        <header class="section-header">
+          <span class="section-header-title">
             Data types
           </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#main-doc">
               <i class="far fa-arrow-alt-circle-up"></i>
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           <p>The latest ECMAScript standard defines seven data types:</p>
           <ul class="menu-list">
             <li>
@@ -447,17 +448,17 @@
       </section>
 
       <section class="main-section card" id="if...else_statement">
-        <header class="card-header">
-          <span class="card-header-title">
+        <header class="section-header">
+          <span class="section-header-title">
             if...else statement
           </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#main-doc">
               <i class="far fa-arrow-alt-circle-up"></i>
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           <p>
             Use the if statement to execute a statement if a logical
             condition is true. Use the optional else clause to execute a
@@ -523,17 +524,17 @@
       </section>
 
       <section class="main-section card" id="while_statement">
-        <header class="card-header">
-          <span class="card-header-title">
+        <header class="section-header">
+          <span class="section-header-title">
             while statement
           </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#main-doc">
               <i class="far fa-arrow-alt-circle-up"></i>
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           <p>
             A while statement executes its statements as long as a specified
             condition evaluates to true. A while statement looks as follows:
@@ -582,17 +583,17 @@
       </section>
 
       <section class="main-section card" id="Function_declarations">
-        <header class="card-header">
-          <span class="card-header-title">
+        <header class="section-header">
+          <span class="section-header-title">
             Function declarations
           </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#main-doc">
               <i class="far fa-arrow-alt-circle-up" />
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           <p>
             A function definition (also called a function declaration, or
             function statement) consists of the function keyword, followed
@@ -636,16 +637,16 @@
       </section>
 
       <section class="main-section card" id="Reference">
-        <header class="card-header">
-          <span class="card-header-title">Reference
+        <header class="section-header">
+          <span class="section-header-title">Reference
           </span>
-          <span class="card-header-icon">
+          <span class="section-header-icon">
             <a href="#main-doc">
               <i class="far fa-arrow-alt-circle-up" />
             </a>
           </span>
         </header>
-        <div class="card-content">
+        <div class="section-content">
           All the documentation in this page is taken from MDN
         </div>
       </section>

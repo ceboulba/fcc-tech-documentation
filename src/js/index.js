@@ -24,47 +24,19 @@ import { Z_FIXED } from "zlib";
 //   }
 // })
 
-// document.addEventListener('DOMContentLoaded', event => {
-//   //console.log('Loaded !')
-//   console.log(event)
+document.addEventListener('DOMContentLoaded', () => {
+  //console.log('Loaded !')
+  console.log('DOMContentLoaded')
 
-//   const width = document.querySelector('.width')
-//   // width.textContent = window.innerWidth
+  // const width = document.querySelector('.width')
+  // width.textContent = window.innerWidth
 
-//   function resize() {
-//     width.textContent = window.innerWidth
+  // function resize() {
+  //   width.textContent = window.innerWidth
 
-//     // width.textContent = 'resize'
-//   }
+  //   // width.textContent = 'resize'
+  // }
 
-//   // window.resize = resize()
-//   window.addEventListener('resize', resize)
-// })
-
-
-(function(){
-
-  const menu = document.querySelector('.menu')
-  let top = menu.getBoundingClientRect().y
-  let width = menu.getBoundingClientRect().width
-  
-  const getTop = function() {
-    let scrollY = window.scrollY;
-    scrollY >= top ?
-    menu.classList.add('fixed') :
-    null
-
-    scrollY <= top ?
-    menu.classList.remove('fixed') :
-    null
-
-    menu.style.width = `${width}px`
-
-    console.log('top => ', top)
-    console.log('scrollY => ', scrollY)
-    console.log('width => ', width)
-  }
-  
-  window.addEventListener('scroll', getTop)
-  window.addEventListener('resize', getTop)
-})()
+  // // window.resize = resize()
+  // window.addEventListener('resize', resize)
+})
