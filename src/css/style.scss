@@ -56,7 +56,7 @@ body {
 .card-header-title {
   font-size: 2em;
   font-weight: 700;
-  font-family: 'Crimson Text';
+  font-family: 'Crimson Text', 'Courier New', Courier, monospace;
   display: inline;
 }
 
@@ -133,6 +133,16 @@ body {
   border: 1px solid $bleu-archipicture;
 }
 
+.menu-header {
+  font-family: 'Crimson Text', 'Courier New', Courier, monospace;
+  font-weight: 400;
+  background-color: $bleu-archipicture;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  height: 3em;
+}
+
 .menu a {
   color: $bleu-archipicture;
   text-decoration: none;
@@ -154,8 +164,14 @@ body {
   background-color: $bleu-archipicture;
   color: white;
   font-size: 2em;
-  font-family: 'Crimson Text';
+  font-family: 'Crimson Text', 'Courier New', Courier, monospace;
   padding-left: 1rem;
+  text-align: center;
+}
+
+.section-header-icon {
+  float: right;
+  padding-right: 1rem;
 }
 
 .section-header a {
