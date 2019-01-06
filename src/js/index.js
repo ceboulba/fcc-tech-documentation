@@ -21,8 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
   }
-  // const menuWidth = calcDistance().width
 
   window.addEventListener('scroll', toFixed)
+  window.addEventListener('resize',()=>{
+    toTop = calcDistance().y
+    menuWidth = calcDistance().width
+    toFixed
+  })
 
 })

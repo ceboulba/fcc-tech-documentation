@@ -130,7 +130,8 @@ body {
 //nav
 .menu {
   grid-column: 1/5;
-  border: 1px solid $bleu-archipicture;
+  // border: 1px solid $bleu-archipicture;
+  box-shadow: 2px 0 5px grey;
 }
 
 .menu-header {
@@ -151,16 +152,16 @@ body {
 
 .menu li {
   text-align: center;
-  border: 1px dotted $bleu-archipicture;
-  border-radius: 1em;
+  // border: 1px dotted $bleu-archipicture;
+  // border-radius: 1em;
   padding: .5em 0;
-  margin: .5em 0;
+  // margin: .25em 0;
 }
 
 .menu a {
   color:$bleu-archipicture;
   text-decoration: none;
-  margin: 1em;
+  // margin: 1em;
 }
 
 .menu li:hover{
