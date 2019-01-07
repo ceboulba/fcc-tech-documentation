@@ -1,31 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log('DOMContentLoaded')
+  let mainNavLinks = document.querySelectorAll('nav ul li a')
+  let mainSections = document.querySelectorAll('main section')
 
-  // const menu = document.querySelector('.menu')
+  let lastId
+  let cur = []
 
-  // const calcDistance = () => {
-  //   const dist = menu.getBoundingClientRect();
-  //   return dist
-  // }
+  window.addEventListener('scroll', () => {
+    let fromTop = window.scrollY
 
-  // let toTop = calcDistance().y
-  // let menuWidth = calcDistance().width
+    mainNavLinks.forEach(link => {
+      let section = document.querySelector(link.hash)
 
-  // const toFixed = () => {
-  //   console.log('toTop=>',window.scrollY)
-  //   if(window.scrollY > toTop) {
-  //     menu.classList.add('fixed')
-  //     menu.style.width = `${menuWidth}px` ;
-  //   } else{
-  //     menu.classList.remove('fixed')
-  //   }
-
-  // }
-
-  // window.addEventListener('scroll', toFixed)
-  // window.addEventListener('resize',()=>{
-  //   toTop = calcDistance().y
-  //   menuWidth = calcDistance().width
-  //   toFixed
-  // })
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        link.classList.add('current')
+      } else {
+        link.classList.remove('current')
+      }
+    })
+  })
 })
