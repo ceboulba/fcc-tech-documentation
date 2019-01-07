@@ -93,9 +93,20 @@ nav header {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
+.section-content {
+  padding: 1rem;
+}
+
 main header a {
   padding-left: 1rem;
   color: white;
+}
+
+.main-section {
+  border: 1px solid $bleu-archipicture;
+  padding: 0;
+  margin: 1rem;
 }
 
 nav ul {
@@ -112,7 +123,6 @@ nav ul li a {
 nav ul li a {
   display: block;
   padding: 0.5rem 1rem;
-  // color: red;
   text-decoration: none;
 }
 
@@ -122,7 +132,7 @@ nav ul li a.current {
 }
 
 main {
-  padding-bottom: 40rem;
+  padding-bottom: 2rem;
 }
 
 main p {
@@ -154,5 +164,11 @@ footer {
   nav ul {
     position: sticky;
     top: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    display: initial;
   }
 }
