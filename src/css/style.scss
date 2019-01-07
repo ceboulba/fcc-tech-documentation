@@ -57,7 +57,7 @@ body {
 }
 
 header {
-  grid-column: 1 / 3;
+  grid-column: 1 / -1;
   background-image: linear-gradient(
       to right bottom,
       rgba(45, 180, 210, 0.8),
@@ -169,6 +169,12 @@ footer {
 
 @media (max-width: 750px) {
   body {
-    display: initial;
+    grid-template-columns: 1fr;
+  }
+  nav {
+    grid-template-columns: 1/-1;
+  }
+  main {
+    grid-template-columns: 1/-1;
   }
 }
