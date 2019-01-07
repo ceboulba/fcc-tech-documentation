@@ -145,7 +145,11 @@ section {
 }
 
 .notification {
-  background: $gris-clair;
+  background: $bleu-archipicture;
+  background: rgba($color: $bleu-archipicture, $alpha: .1);
+  border: 1px solid $bleu-archipicture-dark;
+  color: $bleu-archipicture-dark;
+  box-shadow: 0px 0 2px ;
   padding: 1rem;
   font-style: italic;
   margin-bottom: 1rem;
