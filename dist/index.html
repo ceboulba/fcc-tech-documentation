@@ -15,7 +15,7 @@
 
     <header class="header">
       <div class="logo-box">
-        <img src="/fcc-logo.4db0bcde.png" alt="freeCodeCamp logo" class="logo">
+        <img src="/free-code-camp-logo.d1f8881c.svg" alt="freeCodeCamp logo" class="logo">
       </div>
       <div class="text-box">
         <h1 class="heading-primary">
@@ -206,7 +206,7 @@
           </p>
           <div class="notification">
             <code>
-                function greetMe(yourName) { alert("Hello " + yourName); }
+                function greetMe(yourName) { <br> alert("Hello " + yourName); <br>}<br>
                 greetMe("World");
               </code>
           </div>
@@ -308,7 +308,7 @@
             declared, not the block, which in this case is an if statement.
           </p>
           <div class="notification">
-            <code> if (true) { var x = 5; } console.log(x); // 5 </code>
+            <code> if (true) { <br>var x = 5; <br>}<br> console.log(x); // 5 </code>
           </div>
           <p>
             This behavior changes, when using the let declaration introduced
@@ -316,7 +316,7 @@
           </p>
           <div class="notification">
             <code>
-                if (true) { let y = 5; } console.log(y); // ReferenceError: y
+                if (true) { <br>let y = 5; <br>}<br> console.log(y); // ReferenceError: y
                 is not defined
               </code>
           </div>
@@ -385,8 +385,8 @@
           </p>
           <div class="notification">
             <code>
-                // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; //
-                THIS WILL CAUSE AN ERROR ALSO function f() { const g = 5; var
+                // THIS WILL CAUSE AN ERROR<br> function f() {};<br> const f = 5; //
+                THIS WILL CAUSE AN ERROR ALSO <br>function f() { const g = 5; var
                   g; //statements }
                 </code>
           </div>
@@ -395,7 +395,7 @@
             statement is executed without problems.
           </p>
           <div class="notification">
-            <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+            <code>const MY_OBJECT = {"key": "value"}; <br>MY_OBJECT.key =
                   "otherValue";</code>
           </div>
         </div>
@@ -468,7 +468,7 @@
           </p>
           <div class="notification">
             <code>
-                if (condition) { statement_1; } else { statement_2; }
+                if (condition) { <br>statement_1; <br>} else { <br>statement_2; <br>}
                 </code>
           </div>
           <p>
@@ -484,8 +484,8 @@
           </p>
           <div class="notification">
             <code>
-                  if (condition_1) { statement_1; } else if (condition_2) {
-                    statement_2; } else if (condition_n) { statement_n; } else {
+                  if (condition_1) {<br> statement_1; <br>} <br>else if (condition_2) {<br>
+                    statement_2; <br>} <br>else if (condition_n) {<br> statement_n; <br>} else {
                       statement_last; }
                     </code>
           </div>
